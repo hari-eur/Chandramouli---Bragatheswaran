@@ -2,4 +2,4 @@ Embedur campus training program
 
 Mentor: Bragatheswaran Manickavel
 
-Mentee:Chandramouli V
+Mentee: Chandramouli V
