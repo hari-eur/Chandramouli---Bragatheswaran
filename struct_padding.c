@@ -1,27 +1,35 @@
 #include <stdio.h>
 struct time
 {
-    unsigned int seconds;
-    unsigned int minutes;
-    unsigned int hours;
-    unsigned int day;
-    unsigned int month;
+    unsigned int seconds : 6;
+    unsigned int minutes : 6;
+    unsigned int hours : 5;
+    unsigned int day : 5;
+    unsigned int month : 4;
     unsigned int year;
 } t;
 int main()
 {
+    int hours, minutes, seconds, day, month, year;
+
     printf("Enter Hours ");
-    scanf("%u", &t.hours);
+    scanf("%d", &hours);
+    t.hours = hours;
     printf("Enter Minutes ");
-    scanf("%u", &t.minutes);
+    scanf("%d", &minutes);
+    t.minutes = minutes;
     printf("Enter Seconds ");
-    scanf("%u", &t.seconds);
+    scanf("%d", &seconds);
+    t.seconds = seconds;
     printf("Enter Day ");
-    scanf("%u", &t.day);
+    scanf("%d", &day);
+    t.day = day;
     printf("Enter Month ");
-    scanf("%u", &t.month);
+    scanf("%d", &month);
+    t.month = month;
     printf("Enter Year ");
-    scanf("%u", &t.year);
+    scanf("%d", &year);
+    t.year = year;
 
     printf("\nEntered Time:\n");
     printf("Hours: %u\n", t.hours);
